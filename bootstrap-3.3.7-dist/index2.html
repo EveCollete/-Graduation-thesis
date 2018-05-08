@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Sample</title>
+  <!-- BootstrapのCSS読み込み -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- jQuery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- BootstrapのJS読み込み -->
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!--ナビゲーションバーを使用、デファルト（白背景）の設定を使用しますと設定-->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <!--ナビゲーションバーのヘッダーを設定-->
+    <div class="navbar-header">
+      <!--スマホサイズ時のハンバーガーメニューを設定-->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi">
+        <!--音声ブラウザにメニューがあることを伝えています-->
+        <span class="sr-only">メニュー</span>
+        <!--ハンバーガーメニューの四本線を設定-->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">夢実現ロードマップ</a>
+    </div>
+    <!--ハンバーガーメニュー内に折り畳まれる部分の設定-->
+    <div id="gnavi" class="collapse navbar-collapse">
+      <!--ナビゲーションバーを使用するメニューですと設定-->
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">自己分析用</a></li>
+        <li><a href="index2.html">毎年用</a></li>
+        <li><a href="index3.html">振り返り用</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <div class="page-header">
+      <!--見出し(h1..etc)中央揃え(align="center")-->
+      <h1 align="center">夢実現ロードマップ
+        <br><small>毎年用</small></h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <label>学科指定の授業科目</label>
+      </div>
+      <div class="panel-body" style="border-bottom:1px solid #ccc;">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea2">課題に対する取り組みの具体的な習得目標</label>
+              <textarea class="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="どのレベルまで習得するかを書いて下さい" style="max-height:300px;"></textarea>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea2">習得目標を達成するための課題分析</label>
+              <textarea class="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="何が問題でどう解決するかを書いて下さい" style="max-height:300px;"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <label>課外活動など</label>
+      </div>
+      <div class="panel-body" style="border-bottom:1px solid #ccc;">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea2">課題に対する取り組みの具体的な習得目標</label>
+              <textarea class="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="どのレベルまで習得するかを書いて下さい" style="max-height:300px;"></textarea>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea2">習得目標を達成するための課題分析</label>
+              <textarea class="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="何が問題でどう解決するかを書いて下さい" style="max-height:300px;"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <label>ボランティアなど</label>
+      </div>
+      <div class="panel-body" style="border-bottom:1px solid #ccc;">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea2">課題に対する取り組みの具体的な習得目標</label>
+              <textarea class="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="どのレベルまで習得するかを書いて下さい" style="max-height:300px;"></textarea>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea2">習得目標を達成するための課題分析</label>
+              <textarea class="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="何が問題でどう解決するかを書いて下さい" style="max-height:300px;"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <label>大学行事への参加</label>
+      </div>
+      <div class="panel-body" style="border-bottom:1px solid #ccc;">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea2">課題に対する取り組みの具体的な習得目標</label>
+              <textarea class="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="どのレベルまで習得するかを書いて下さい" style="max-height:300px;"></textarea>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea2">習得目標を達成するための課題分析</label>
+              <textarea class="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="何が問題でどう解決するかを書いて下さい" style="max-height:300px;"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Sample</title>
+  <!-- BootstrapのCSS読み込み -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- jQuery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- BootstrapのJS読み込み -->
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!--ナビゲーションバーを使用、デファルト（白背景）の設定を使用しますと設定-->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <!--ナビゲーションバーのヘッダーを設定-->
+    <div class="navbar-header">
+      <!--スマホサイズ時のハンバーガーメニューを設定-->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi">
+        <!--音声ブラウザにメニューがあることを伝えています-->
+        <span class="sr-only">メニュー</span>
+        <!--ハンバーガーメニューの四本線を設定-->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">夢実現ロードマップ</a>
+    </div>
+    <!--ハンバーガーメニュー内に折り畳まれる部分の設定-->
+    <div id="gnavi" class="collapse navbar-collapse">
+      <!--ナビゲーションバーを使用するメニューですと設定-->
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">自己分析用</a></li>
+        <li><a href="index2.html">毎年用</a></li>
+        <li><a href="index3.html">振り返り用</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <div class="page-header">
+      <!--見出し(h1..etc)中央揃え(align="center")-->
+      <h1 align="center">夢実現ロードマップ
+        <br><small>振り返り用</small></h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <label>前期末</label>
+      </div>
+      <div class="panel-body" style="border-bottom:1px solid #ccc;">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea2">学科指定の授業科目</label>
+              <textarea class="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="何をしたのか具体的に書いて下さい" style="max-height:300px;"></textarea>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label class="control-label" for="InputNumber">達成度(自己評価)</label>
+              <input type="number" min="0" max="100" class="form-control" id="InputNumber" placeholder="数値（1～100)">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label class="control-label" for="InputNumber">達成度(面談後)</label>
+              <input type="number" min="0" max="100" class="form-control" id="InputNumber" placeholder="数値（1～100)">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea2">課外活動など</label>
+              <textarea class="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="行った課外活動で得た事など書いて下さい" style="max-height:300px;"></textarea>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label class="control-label" for="InputNumber">達成度(自己評価)</label>
+              <input type="number" min="0" max="100" class="form-control" id="InputNumber" placeholder="数値（1～100)">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label class="control-label" for="InputNumber">達成度(面談後)</label>
+              <input type="number" min="0" max="100" class="form-control" id="InputNumber" placeholder="数値（1～100)">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea2">ボランティア（バイト等も含む）など</label>
+              <textarea class="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="ボランティア等行い得た事を書いて下さい" style="max-height:300px;"></textarea>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label class="control-label" for="InputNumber">達成度(自己評価)</label>
+              <input type="number" min="0" max="100" class="form-control" id="InputNumber" placeholder="数値（1～100)">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label class="control-label" for="InputNumber">達成度(面談後)</label>
+              <input type="number" min="0" max="100" class="form-control" id="InputNumber" placeholder="数値（1～100)">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea2">大学行事への参加</label>
+              <textarea class="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="大学行事での行いを書いて下さい" style="max-height:300px;"></textarea>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label class="control-label" for="InputNumber">達成度(自己評価)</label>
+              <input type="number" min="0" max="100" class="form-control" id="InputNumber" placeholder="数値（1～100)">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label class="control-label" for="InputNumber">達成度(面談後)</label>
+              <input type="number" min="0" max="100" class="form-control" id="InputNumber" placeholder="数値（1～100)">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea2">目標以外</label>
+          <textarea class="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="上記項目以外、自主的にやったことを書いて下さい" style="max-height:300px;"></textarea>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <label>後期末</label>
+      </div>
+
+      <div class="panel-body" style="border-bottom:1px solid #ccc;">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea2">学科指定の授業科目</label>
+              <textarea class="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="何をしたのか具体的に書いて下さい" style="max-height:300px;"></textarea>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label class="control-label" for="InputNumber">達成度(自己評価)</label>
+              <input type="number" min="0" max="100" class="form-control" id="InputNumber" placeholder="数値（1～100)">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label class="control-label" for="InputNumber">達成度(面談後)</label>
+              <input type="number" min="0" max="100" class="form-control" id="InputNumber" placeholder="数値（1～100)">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea2">課外活動など</label>
+              <textarea class="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="行った課外活動で得た事など書いて下さい" style="max-height:300px;"></textarea>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label class="control-label" for="InputNumber">達成度(自己評価)</label>
+              <input type="number" min="0" max="100" class="form-control" id="InputNumber" placeholder="数値（1～100)">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label class="control-label" for="InputNumber">達成度(面談後)</label>
+              <input type="number" min="0" max="100" class="form-control" id="InputNumber" placeholder="数値（1～100)">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea2">ボランティア（バイト等も含む）など</label>
+              <textarea class="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="ボランティア等行い得た事を書いて下さい" style="max-height:300px;"></textarea>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label class="control-label" for="InputNumber">達成度(自己評価)</label>
+              <input type="number" min="0" max="100" class="form-control" id="InputNumber" placeholder="数値（1～100)">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label class="control-label" for="InputNumber">達成度(面談後)</label>
+              <input type="number" min="0" max="100" class="form-control" id="InputNumber" placeholder="数値（1～100)">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea2">大学行事への参加</label>
+              <textarea class="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="大学行事での行いを書いて下さい" style="max-height:300px;"></textarea>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label class="control-label" for="InputNumber">達成度(自己評価)</label>
+              <input type="number" min="0" max="100" class="form-control" id="InputNumber" placeholder="数値（1～100)">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label class="control-label" for="InputNumber">達成度(面談後)</label>
+              <input type="number" min="0" max="100" class="form-control" id="InputNumber" placeholder="数値（1～100)">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea2">目標以外</label>
+          <textarea class="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="上記項目以外、自主的にやったことを書いて下さい" style="max-height:300px;"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

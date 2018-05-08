@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Sample</title>
+  <!-- BootstrapのCSS読み込み -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- jQuery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- BootstrapのJS読み込み -->
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!--ナビゲーションバーを使用、デファルト（白背景）の設定を使用しますと設定-->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <!--ナビゲーションバーのヘッダーを設定-->
+    <div class="navbar-header">
+      <!--スマホサイズ時のハンバーガーメニューを設定-->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi">
+        <!--音声ブラウザにメニューがあることを伝えています-->
+        <span class="sr-only">メニュー</span>
+        <!--ハンバーガーメニューの四本線を設定-->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">夢実現ロードマップ</a>
+    </div>
+    <!--ハンバーガーメニュー内に折り畳まれる部分の設定-->
+    <div id="gnavi" class="collapse navbar-collapse">
+      <!--ナビゲーションバーを使用するメニューですと設定-->
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">自己分析用</a></li>
+        <li><a href="index2.html">毎年用</a></li>
+        <li><a href="index3.html">振り返り用</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <div class="page-header">
+      <!--見出し(h1..etc)中央揃え(align="center")-->
+      <h1 align="center">夢実現ロードマップ
+        <br><small>自己分析用</small></h1>
+    </div>
+  </div>
+
+  <!--コンテナを与えるクラス-->
+  <div class="container">
+    <!--rowという箱を与えるクラス-->
+    <div class="row">
+      <!--row1-->
+      <div class="col-lg-6">
+        <!--col-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <label>学籍番号、フリガナ、名前</label>
+          </div>
+          <div class="panel-body">
+            <!--colという箱を与えるクラス-->
+            <div class="col-sm-4">
+              <label>学籍番号</label>
+              <input type="text" class="form-control" placeholder="002737000">
+            </div>
+            <div class="col-sm-4">
+              <label>フリガナ</label>
+              <input type="text" class="form-control" placeholder="シコクタロウ">
+            </div>
+            <div class="col-sm-4">
+              <label>名前</label>
+              <input type="text" class="form-control" placeholder="四国太郎">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--col-->
+
+      <div class="col-lg-6">
+        <!--col2-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <label>所属学科、コース選択、学年（年齢）</label>
+          </div>
+          <div class="panel-body">
+            <!--colという箱を与えるクラス-->
+            <div class="col-sm-3">
+              <label>所属学科</label>
+              <input type="text" class="form-control" placeholder="文学部">
+            </div>
+            <div class="col-sm-3">
+              <label>コース選択</label>
+              <input type="text" class="form-control" placeholder="日本文学科">
+            </div>
+            <div class="col-sm-3">
+              <label class="control-label" for="usage1select1">学年</label>
+              <select class="form-control" id="usage1select1">
+                  <option>1年生</option>
+                  <option>2年生</option>
+                  <option>3年生</option>
+                  <option>4年生</option>
+                </select>
+            </div>
+            <div class="col-sm-3">
+              <label class="control-label" for="usage1select2">年齢</label>
+              <select class="form-control" id="usage1select2">
+                  <option>18歳</option>
+                  <option>19歳</option>
+                  <option>20歳</option>
+                  <option>21歳</option>
+                  <option>22歳</option>
+                </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--col2-->
+
+    </div>
+    <!--row1-->
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <label>【現在の自分】</label>
+      </div>
+      <div class="panel-body" style="border-bottom:1px solid #ccc;">
+        <div class="text-center">
+          <label style="font-size:20px; padding:20px 0 20px;"><span>《 特に頑張ったこと 》</span></label>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">幼稚園時代</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">小学校時代</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">中学校時代</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">高等学校時代</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel-body" style="border-bottom:1px solid #ccc;">
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">保有する公的資格等</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+        </div>
+      </div>
+      <div class="panel-body">
+        <label>自分の特徴</label>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group panel panel-default" style="background:#f5f5f5;">
+              <label for="exampleFormControlTextarea1" class="panel-heading" style="border:none; margin:0;">長所：強み</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" style="border-top-left-radius:0; border-top-right-radius:0;"></textarea>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group panel panel-default" style="background:#f5f5f5;">
+              <label for="exampleFormControlTextarea1" class="panel-heading" style="border:none; margin:0;">短所：弱み</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" style="border-top-left-radius:0; border-top-right-radius:0;"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <label>【将来の自分（なりたい自分）】</label>
+      </div>
+      <div class="panel-body" style="border-bottom:1px solid #ccc;">
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">4年後の「なりたい自分」のイメージの書き出し（目標）</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+        </div>
+      </div>
+      <div class="panel-body" style="border-bottom:1px solid #ccc;">
+        <div class="form-group col-sm-4">
+          <label class="control-label" for="usage1select1">学科に対する適性</label>
+          <select class="form-control" id="usage1select1">
+                <option>非常に適している</option>
+                <option>適している</option>
+                <option>普通</option>
+                <option>あまり適さない</option>
+                <option>適さない</option>
+              </select>
+        </div>
+      </div>
+      <div class="panel-body" style="border-bottom:1px solid #ccc;">
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">自分の課題に対する特徴（目標達成に必要なスキル）</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+        </div>
+      </div>
+      <div class="panel-body" style="border-bottom:1px solid #ccc;">
+        <label>今後習得したいスキル</label>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group panel panel-default" style="background:#f5f5f5;">
+              <label for="exampleFormControlTextarea1" class="panel-heading" style="border:none; margin:0;">強み（さらに強化したいスキル）</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" style="border-top-left-radius:0; border-top-right-radius:0;"></textarea>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group panel panel-default" style="background:#f5f5f5;">
+              <label for="exampleFormControlTextarea1" class="panel-heading" style="border:none; margin:0;">弱み（今後高めたいスキル）</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" style="border-top-left-radius:0; border-top-right-radius:0;"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">今後習得したいスキルの理由</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+        </div>
+      </div>
+      <div class="panel-body" style="border-bottom:1px solid #ccc;">
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">今後自己啓発に取り組みたいこと（取得したい公的資格等含む）</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+        </div>
+      </div>
+      <div class="panel-body" style="border-bottom:1px solid #ccc;">
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">備考</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
